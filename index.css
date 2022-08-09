@@ -4,10 +4,10 @@
     box-sizing: border-box;
 }
 body{
-
+    font-family: 'Poppins', sans-serif;
 }
 .header{
-    background: radial-gradient(#fff, #ffd6d6);
+    background-color: rgb(250, 236, 215);
 }  
 .nav-bar{
     overflow: hidden;
@@ -32,7 +32,7 @@ ul li{
     display: inline-block;
 }
 ul li a{
-    font-size: 20px;
+    font-size: 15px;
     text-decoration: none;
     color:#fff;
     padding:10px;
@@ -48,8 +48,111 @@ ul li a:hover{
     display: none;
     position:absolute;
     background-color: rgb(219, 125, 125);
-    margin-top: 10px;
+    padding-top: 15px;
+    width: 180px;
+}
+.dropdown-content a{
+    padding:5px;
 }
 .dropdown-menu:hover .dropdown-content{
     display: block;
+}
+
+
+/*-------
+
+.header-body{
+    width: 980px;
+    margin:auto;
+    padding: 100px 0;
+}
+.animate-text{
+    display: flex;
+    align-items: center;
+}
+.normal-text h1{
+    font-size: 28px;
+    color:navy;
+    font-weight: 400;
+    margin-right: 10px;
+
+}
+.dynamic-text{
+    height: 20px;
+    line-height: 20px;
+    
+}
+.dynamic-text li{
+    list-style-type: none;
+    font-size: 18px;
+    color:#FC6D6D;
+}
+
+.dynamic-text li span{
+    position:relative;
+}
+.dynamic-text li span::after{
+    content: "";
+    height: 100%;
+    width: 100%;
+    border-left: 1px solid #FC6D6D;
+    left: 0;
+    position: absolute;
+    background-color: rgb(219, 125, 125);
+    animation: typing 1.5s steps(10) infinite;  
+}
+@keyframes typing{
+    100%{
+        left: 100%;
+        margin:0 -5px 0 35px;
+    }
+}
+*/
+
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    padding:50px 10px;
+    justify-content: space-around;
+    align-items: center;
+    padding:100px 0;
+}
+.coll-2{
+    flex-basis: 40%;
+    min-width: 300px;
+}
+.coll-2 .images{
+    width: 50%;
+    float: right;
+}
+.coll-2 .images img{
+    width: 100%;
+}
+.coll-2 h3{
+    color:#555;
+    font-size: 19px;
+}
+.coll-2 h1{
+    margin-bottom: 20px;
+    color:#555;
+    font-size: 25px;
+}
+.coll-2 span{
+    color:red;
+    font-size: 35px;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+.coll-2 .btn{
+    background-color: red;
+    color:white;
+    font-size: 20px;
+    padding:8px 25px;
+    border-radius: 25px;
+    text-decoration: none;
+}
+.coll-2 .btn:hover{
+    background-color: black;
+    color:white;
+    transition: .5s;
 }
